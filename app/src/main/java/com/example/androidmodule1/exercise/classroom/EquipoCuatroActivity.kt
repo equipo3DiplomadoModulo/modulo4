@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
 import com.example.androidmodule1.exercise.classroom.edgarIntent.EdgarActivity
-import com.example.androidmodule1.exercise.classroom.explicitIntent.SecondActivity
+
 
 class EquipoCuatroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
