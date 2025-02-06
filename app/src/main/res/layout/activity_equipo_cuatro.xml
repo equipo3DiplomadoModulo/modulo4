@@ -5,68 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_tertiary90"
-
-    tools:context=".exercise.classroom.edgarIntent.EdgarActivity">
+    tools:context=".exercise.classroom.EquipoCuatroActivity">
 
     <TextView
-        android:text="Primer Activity de Edgar Vargas"
+        android:text="APP DEL EQUIPO 3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:textSize="20dp"
-        android:background="@color/material_dynamic_tertiary40"
-        android:textColor="@color/white"
-        android:paddingTop="30dp"
-        android:paddingBottom="10dp"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-
-        />
-
-    <Button
-        android:id="@+id/btnOpenEdgarSecondScreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Ver segundo Activity "
-        android:backgroundTint="@color/material_dynamic_primary30"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-50dp"
-
+        android:layout_marginTop="70px"
         />
     <Button
-        android:id="@+id/btnIrURL"
+        android:id="@+id/btnOpenEdgarScreen"
+        android:text="Ver vistas de Edgar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir al sitio de Italliannis"
         android:backgroundTint="@color/material_dynamic_tertiary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-
+        android:layout_marginTop="-180dp"
         />
-    <TextView
-        android:id="@+id/tvName"
-        android:text="dato esperado"
-        android:textSize="30sp"
-        android:textColor="@color/material_dynamic_tertiary20"
-        android:fontFamily="cursive"
-        android:textAlignment="center"
+    <Button
+        android:text="Ver vistas de ..."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-80dp"
         />
-
+    <Button
+        android:text="Ver vistas de ..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        />
+    <Button
+        android:text="Ver vistas de ..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

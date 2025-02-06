@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +57,14 @@ class EdgarActivity : AppCompatActivity() {
         }
 
 
+        val tvName = findViewById<TextView>(R.id.tvName)
+
+        intent.extras?.let {
+            if (it.containsKey("EXTRA_NAME")) {
+                val name = it.getString("EXTRA_NAME")
+                tvName.text = name
+            }
+        }
     }
 
     override fun onStart() {
