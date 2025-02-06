@@ -17,8 +17,6 @@ class LifeCycleActivity : AppCompatActivity() {
 
         Toast.makeText(this,"onCreate",Toast.LENGTH_LONG)
             .show()
-
-
         Log.e("LifeCycle","onCreate")
 
     }

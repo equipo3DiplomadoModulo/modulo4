@@ -2,6 +2,7 @@ package com.example.androidmodule1.exercise.classroom.explicitIntent
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -44,10 +45,11 @@ class HomeActivity : AppCompatActivity() {
                 putExtra("EXTRA_MARRIED",false)
                 putExtra("EXTRA_AGE",26)
             }
-
             register.launch(secondIntent)
         }
-
-
+    }
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(this,"Estatus: onStart",Toast.LENGTH_LONG).show()
     }
 }
