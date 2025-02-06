@@ -3,16 +3,13 @@ package com.example.androidmodule1.exercise.classroom.edgarIntent
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
-import com.example.androidmodule1.exercise.classroom.explicitIntent.SecondActivity
+
 
 class EdgarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

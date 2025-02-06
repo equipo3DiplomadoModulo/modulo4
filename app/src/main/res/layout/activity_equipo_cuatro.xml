@@ -11,10 +11,10 @@
         android:text="APP DEL EQUIPO 3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:layout_marginTop="70px"
+        android:layout_marginTop="70sp"
         />
     <Button
         android:id="@+id/btnOpenEdgarScreen"
