@@ -29,20 +29,7 @@
         <activity
             android:name=".exercise.classroom.edgarIntent.EdgarActivity"
             android:exported="true"/>
-        <activity
-            android:name=".exercise.classroom.explicitIntent.SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".exercise.classroom.explicitIntent.HomeActivity"
-            android:exported="true" />
-        <activity android:name=".exercise.classroom.ImplicitIntentActivity" />
-        <activity
-            android:name=".exercise.classroom.ExampleCreationActivity"
-            android:exported="false" />
-        <activity android:name=".exercise.classroom.ExampleManualCreationActivity" />
-        <activity
-            android:name=".exercise.classroom.LifeCycleActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.androidmodule1.exercise.classroom.edgarIntent
 
+import android.util.Log
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -68,4 +69,31 @@ class EdgarActivity : AppCompatActivity() {
         super.onStart()
         Toast.makeText(this,"Estatus: onStart",Toast.LENGTH_SHORT).show()
     }
+    override fun onResume() {
+        super.onResume()
+
+        Log.e("LifeCycle","onResume")
+        Toast.makeText(this,"onResume",Toast.LENGTH_LONG)
+            .show()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("LifeCycle","Estatus: onPause")
+        Toast.makeText(this,"onPause",Toast.LENGTH_LONG)
+            .show()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("LifeCycle","Estatus: onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("LifeCycle","Estatus: onDestroy")
+        Toast.makeText(this,"onDestroy",Toast.LENGTH_LONG)
+            .show()
+    }
+
 }
