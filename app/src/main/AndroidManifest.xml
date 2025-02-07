@@ -15,6 +15,12 @@
         android:theme="@style/Theme.AndroidModule1"
         tools:targetApi="31">
         <activity
+            android:name=".exercise.classroom.luisTapia.LuisSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.LuisActivity"
+            android:exported="false" />
+        <activity
             android:name=".exercise.classroom.EquipoCuatroActivity"
             android:exported="true">
             <intent-filter>
@@ -28,8 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".exercise.classroom.edgarIntent.EdgarActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
 
 </manifest>

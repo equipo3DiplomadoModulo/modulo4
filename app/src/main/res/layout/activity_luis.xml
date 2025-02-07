@@ -5,61 +5,56 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".exercise.classroom.EquipoCuatroActivity">
+    android:background="@android:color/system_control_activated_dark"
+    tools:context=".exercise.classroom.luisTapia.LuisActivity">
 
     <TextView
-        android:text="APP DEL EQUIPO 3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luis Tapia"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginTop="70sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
+
     <Button
-        android:id="@+id/btnOpenEdgarScreen"
-        android:text="Ver vistas de Edgar"
+        android:id="@+id/btnOpenLuisSecondScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_dynamic_tertiary20"
+        android:text="Segunda Pantalla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-180dp"
         />
+
+
     <Button
-        android:id="@+id/btnOpenLuisScreen"
-        android:text="Ver vistas de Luis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Intent -> google"
+        android:id="@+id/btnIntentUrl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-80dp"
+        android:layout_marginTop="100dp"
 
         />
-    <Button
 
-        android:text="Ver vistas de Marvin"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Regresar a home"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"
+        android:id="@+id/btnRegresarHomeScren"
         />
-    <Button
 
-        android:text="Ver vistas de Fernando"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="130dp"
-        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
