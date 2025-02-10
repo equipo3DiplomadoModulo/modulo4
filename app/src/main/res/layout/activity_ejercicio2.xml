@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exercise.classroom.Ejercicio2Activity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".06"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glMiddle"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"
+        android:layout_marginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLeft"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRight"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:src="@drawable/equipo3"
+        app:layout_constraintTop_toBottomOf="@+id/glTop"
+        app:layout_constraintStart_toEndOf="@id/glLeft"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/btOpenEdgarLayouts"
+        android:text="Composiciones de Edgar"
+        app:layout_constraintTop_toBottomOf="@+id/glMiddle"
+        app:layout_constraintStart_toEndOf="@id/glLeft"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        android:layout_marginTop="10dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btOpenLuisLayouts"
+        android:text="Composiciones de Luis"
+        app:layout_constraintTop_toBottomOf="@+id/btOpenEdgarLayouts"
+        app:layout_constraintStart_toEndOf="@id/glLeft"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        android:layout_marginTop="10dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btOpenMarvinLayouts"
+        android:text="Composiciones de Marvin"
+        app:layout_constraintTop_toBottomOf="@+id/btOpenLuisLayouts"
+        app:layout_constraintStart_toEndOf="@id/glLeft"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        android:layout_marginTop="10dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btOpenFernandoLayouts"
+        android:text="Composiciones de Marvin"
+        app:layout_constraintTop_toBottomOf="@+id/btOpenMarvinLayouts"
+        app:layout_constraintStart_toEndOf="@id/glLeft"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        android:layout_marginTop="10dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,13 +15,16 @@
         android:theme="@style/Theme.AndroidModule1"
         tools:targetApi="31">
         <activity
-            android:name=".exercise.classroom.luisTapia.LuisSecondActivity"
+            android:name=".exercise.classroom.ejercicio2edgar.LinearLActivity"
             android:exported="false" />
         <activity
-            android:name=".exercise.classroom.luisTapia.LuisActivity"
+            android:name=".exercise.classroom.ejercicio2edgar.EdgarLayoutsActivity"
             android:exported="false" />
         <activity
-            android:name=".exercise.classroom.EquipoCuatroActivity"
+            android:name=".exercise.classroom.ejercicio2edgar.FrameLActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.Ejercicio2Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +32,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".exercise.classroom.luisTapia.LuisSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.LuisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.EquipoCuatroActivity"
+            android:exported="true" />
         <activity
             android:name=".exercise.classroom.edgarIntent.EdgarSecondActivity"
             android:exported="false" />
