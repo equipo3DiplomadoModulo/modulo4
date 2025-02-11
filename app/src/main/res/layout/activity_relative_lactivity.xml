@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkred"
+    tools:context=".exercise.classroom.ejercicio2edgar.RelativeLActivity">
+
+
+
+    <ImageView
+        android:src="@drawable/tunder2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/etUser"
+        android:text="Moonra RelativeLayout"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/etDescription"
+        android:textColor="@color/white"
+        android:text="Es el Antagonista principal de la serie originalmente, es jefe de los antagonistas y el enemigo más poderoso de los ThunderCats. Sacerdote infernal, autoproclamado «el que no muere» y «el inmortal» del Tercer Planeta, tiene poderes de hechicero y una vida aparentemente eterna. Sin embargo, no es más que un siervo de los Antiguos Espíritus del Mal que le proporcionan sus enormes poderes y la inmortalidad para continuar en su empeño de extender sus dominios a lo largo y ancho del Tercer Planeta."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etUser"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btRegresar"
+        android:layout_alignParentBottom="true"
+        android:text="Regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="100dp" />
+
+
+</RelativeLayout>

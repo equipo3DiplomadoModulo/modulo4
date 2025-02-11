@@ -10,9 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
-import com.example.androidmodule1.exercise.classroom.edgarIntent.EdgarActivity
 import com.example.androidmodule1.exercise.classroom.ejercicio2edgar.EdgarLayoutsActivity
-import com.example.androidmodule1.exercise.classroom.ejercicio2edgar.FrameLActivity
+
 
 class Ejercicio2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

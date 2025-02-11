@@ -6,19 +6,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
    android:orientation="vertical"
+    android:background="@color/blue"
     tools:context=".exercise.classroom.ejercicio2edgar.LinearLActivity">
 
-    <TextView
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="Arriba"
+
+
+
+    <ImageView
+        android:src="@drawable/tunder6"
+        android:layout_weight=".05"
+        android:background="@color/pink"
+        android:layout_gravity="center"
+        android:paddingVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <TextView
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="Abajo"
+        android:layout_height="200dp" />
+
+
+    <ImageView
+        android:src="@drawable/tunder3"
+        android:background="@color/purple"
+        android:layout_weight=".04"
+        android:layout_gravity="center"
+        android:paddingVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_weight="90"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/darkred"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Felino"
+                android:layout_weight="1.1"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="10dp"/>
+            <TextView
+                android:layout_weight=".3"
+                android:text="Es un niño thunderiano que está aliado con los ThunderCats, y reside en el Cubil Felino, junto a su hermana Felina, andan en los deslizadores, creados por Pantro, para su disposición."
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Felina"
+                android:layout_weight="1.1"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="10dp"/>
+
+                android:paddingVertical="10dp"/>
+            <TextView
+                android:layout_weight=".3"
+                android:text="Basada en el Gato montés. Es la mayor de los gemelos, cuando es joven, nunca se separa de su hermano y sufre mucho cuando este es atrapado por el enemigo. Después de que León-O parte a su prueba del Libro del Augurio es esclavizada junto con Wily-Kat.  "
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/btRegresar"
+        android:layout_weight=".5"
+        android:layout_gravity="bottom|center"
+        android:text="Regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  />
+
+
+
+
 
 </LinearLayout>
