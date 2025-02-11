@@ -53,8 +53,7 @@
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/tvDescription"
-        android:text="Cheetara fue el único ThunderCat femenino adulto hasta la aparición posterior del personaje de Pumara. Hermosa, valiente y solidaria, a menudo es la voz de la razón. Posee un sexto sentido felino que le permite detectar si hay algún peligro o el mal está cerca. Este sentido premonitorio, que Cheetara considera como una maldición, también le permite recibir visiones, aunque solo se manifieste de modo involuntario y cause un debilitamiento que puede requerir varios días de recuperación.
-La velocidad de Cheetara es increíble, aunque sólo puede mantener la carrera durante un breve período. También es extremadamente rápida en el combate. Su arma preferida es un bō que puede aumentar o disminuir de longitud."
+        android:text="Cheetara fue el único ThunderCat femenino adulto hasta la aparición posterior del personaje de Pumara. Hermosa, valiente y solidaria, a menudo es la voz de la razón. Posee un sexto sentido felino que le permite detectar si hay algún peligro o el mal está cerca. Este sentido premonitorio, que Cheetara considera como una maldición, también le permite recibir visiones, aunque solo se manifieste de modo involuntario y cause un debilitamiento que puede requerir varios días de recuperación."
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="40dp"
@@ -69,6 +68,7 @@ La velocidad de Cheetara es increíble, aunque sólo puede mantener la carrera d
         app:layout_constraintStart_toEndOf="@+id/glStart"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         android:text="Regresar"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

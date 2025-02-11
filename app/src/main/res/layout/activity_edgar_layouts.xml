@@ -61,7 +61,7 @@
     <Button
         android:id="@+id/btFrameL"
         android:text="Mi FrameLayout"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/glPerTop"
         android:layout_marginTop="30dp"
@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/btLinearL"
         android:text="Mi LinearLayout"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btFrameL"
         android:layout_marginTop="8dp"
@@ -79,7 +79,7 @@
     <Button
         android:id="@+id/btRelativeL"
         android:text="Mi RelativeLayout"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btLinearL"
         android:layout_marginTop="8dp"
@@ -88,7 +88,7 @@
     <Button
         android:id="@+id/btConstraintL"
         android:text="Mi ConstraintLayout"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btRelativeL"
         android:layout_marginTop="8dp"
@@ -96,8 +96,8 @@
         app:layout_constraintEnd_toStartOf="@id/glEnd" />
     <Button
         android:id="@+id/btInterface1"
-        android:text="Mi Interfaz 1"
-        android:layout_width="240dp"
+        android:text="Mis Components"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btConstraintL"
         android:layout_marginTop="8dp"
@@ -105,10 +105,20 @@
         app:layout_constraintEnd_toStartOf="@id/glEnd" />
     <Button
         android:id="@+id/btInterface2"
-        android:text="Mi Interfaz RecyclerView"
-        android:layout_width="240dp"
+        android:text="Mi RecyclerView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btInterface1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintEnd_toStartOf="@id/glEnd" />
+
+    <Button
+        android:id="@+id/btOpenEjercicio2"
+        android:text="Regresar a Equipo 3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/glPerBottom"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@id/glStart"
         app:layout_constraintEnd_toStartOf="@id/glEnd" />

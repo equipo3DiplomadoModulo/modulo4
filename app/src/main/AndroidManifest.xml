@@ -15,6 +15,15 @@
         android:theme="@style/Theme.AndroidModule1"
         tools:targetApi="31">
         <activity
+            android:name=".exercise.classroom.ejercicio2edgar.recyclerviewelments.ThundercatAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.ejercicio2edgar.RecyclerVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.ejercicio2edgar.Interface1Activity"
+            android:exported="false" />
+        <activity
             android:name=".exercise.classroom.ejercicio2edgar.ConstraintLActivity"
             android:exported="false" />
         <activity

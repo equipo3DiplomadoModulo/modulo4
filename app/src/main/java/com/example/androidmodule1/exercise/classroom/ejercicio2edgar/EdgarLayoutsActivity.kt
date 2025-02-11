@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmodule1.R
+import com.example.androidmodule1.exercise.classroom.Ejercicio2Activity
 
 
 class EdgarLayoutsActivity : AppCompatActivity() {
@@ -18,6 +19,9 @@ class EdgarLayoutsActivity : AppCompatActivity() {
         val btnOpenLinearL = findViewById<Button>(R.id.btLinearL)
         val btnOpenRelativeL = findViewById<Button>(R.id.btRelativeL)
         val btOpenConstraintLActivity = findViewById<Button>(R.id.btConstraintL)
+        val btOpenInterface1Activity = findViewById<Button>(R.id.btInterface1)
+        val btOpenRecyclerVActivity = findViewById<Button>(R.id.btInterface2)
+
 
         btnOpenFrameL.setOnClickListener {
             val frameActivity = Intent(this, FrameLActivity::class.java)
@@ -33,6 +37,22 @@ class EdgarLayoutsActivity : AppCompatActivity() {
         }
         btOpenConstraintLActivity.setOnClickListener {
             val frameActivity = Intent(this, ConstraintLActivity::class.java)
+            register.launch(frameActivity)
+        }
+        btOpenInterface1Activity.setOnClickListener {
+            val frameActivity = Intent(this, Interface1Activity::class.java)
+            register.launch(frameActivity)
+        }
+        btOpenRecyclerVActivity.setOnClickListener {
+            val frameActivity = Intent(this, RecyclerVActivity::class.java)
+            register.launch(frameActivity)
+        }
+
+
+        // ******* BOTÓN DE REGRESO *******
+        val btnOpenEjercicio2Activity = findViewById<Button>(R.id.btOpenEjercicio2)
+        btnOpenEjercicio2Activity.setOnClickListener {
+            val frameActivity = Intent(this, Ejercicio2Activity::class.java)
             register.launch(frameActivity)
         }
 
