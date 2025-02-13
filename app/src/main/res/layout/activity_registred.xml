@@ -81,15 +81,26 @@
         android:id="@+id/tvSucces"
         android:text="Registred foo"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="25dp"
         android:textColor="@color/darkblue"
         app:layout_constraintTop_toBottomOf="@+id/glTopForm"
         app:layout_constraintBottom_toTopOf="@+id/glBottomForm"
         app:layout_constraintStart_toEndOf="@+id/glStartForm"
         app:layout_constraintEnd_toStartOf="@+id/glEndForm"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:text="Registred foo mail"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/darkblue"
+        app:layout_constraintTop_toBottomOf="@+id/tvSucces"
 
-         />
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

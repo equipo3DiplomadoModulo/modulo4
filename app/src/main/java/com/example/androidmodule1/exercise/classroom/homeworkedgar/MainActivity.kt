@@ -125,6 +125,8 @@ class MainActivity : AppCompatActivity() {
                val frameActivity = Intent(this, RegistredActivity::class.java).apply{
 
                    putExtra("EXTRA_NAME", etName.text.toString())
+                   putExtra("EXTRA_SECONDNAME", etSecondName.text.toString())
+                   putExtra("EXTRA_EMAIL", etEmail.text.toString())
                    putExtra("EXTRA_SEX", sex)
 
                }

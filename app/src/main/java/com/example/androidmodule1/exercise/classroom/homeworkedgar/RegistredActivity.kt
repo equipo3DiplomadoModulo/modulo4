@@ -23,18 +23,32 @@ class RegistredActivity : AppCompatActivity() {
             insets
         }
 
-       val tvSucces = findViewById<TextView>(R.id.tvSucces)
+        val tvSucces = findViewById<TextView>(R.id.tvSucces)
+        val tvEmail = findViewById<TextView>(R.id.tvEmail)
+        var secondname = "x"
+        var email = ""
         intent.extras?.let{
-            // it es la referencia a su intent , es parecido al this
-            if(it.containsKey("EXTRA_NAME")){ // SI LA LLAVE EXISTE
+
+            if(it.containsKey("EXTRA_SECONDNAME")) {
+               secondname = it.getString("EXTRA_SECONDNAME").toString()
+            }
+            if(it.containsKey("EXTRA_EMAIL")) {
+                email = it.getString("EXTRA_EMAIL").toString()
+            }
+
+            if(it.containsKey("EXTRA_NAME")){
                 val name = it.getString("EXTRA_NAME")
+
                 val sexText = it.getString("EXTRA_SEX")
 
+                // diferenciador de genero en el mensaje bajo sexo elegido
                 if( sexText == "H" ){
-                    tvSucces.text = "$name fuiste registrado con exito"
+                    tvSucces.text = "$name $secondname  fuiste registrado exitosamente con el correo:"
+
                 }else{
-                    tvSucces.text = "$name fuiste registrada con exito"
+                    tvSucces.text = "$name $secondname fuiste registrada exitosamente con el correo:"
                 }
+                    tvEmail.text = email
             }
         }
     }
