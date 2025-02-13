@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".exercise.classroom.homeworkedgar.RegistredActivity">
+    <!-- GUIDELINES FRAME -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottom"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--GUIDELINES FORM-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopForm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomForm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- INTERFACE ELEMENTS -->
+
+    <ImageView
+        android:id="@+id/ivLogoBazares"
+        android:src="@drawable/logo_bazares"
+        app:layout_constraintTop_toBottomOf="@+id/glTop"
+        app:layout_constraintStart_toEndOf="@+id/glStart"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        android:layout_marginHorizontal="70dp"
+        android:layout_width="0dp"
+        android:layout_height="110dp" />
+
+    <TextView
+        android:id="@+id/tvSucces"
+        android:text="Registred foo"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@color/darkblue"
+        app:layout_constraintTop_toBottomOf="@+id/glTopForm"
+        app:layout_constraintBottom_toTopOf="@+id/glBottomForm"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

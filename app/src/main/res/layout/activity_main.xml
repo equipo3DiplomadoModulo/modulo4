@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".exercise.classroom.homeworkedgar.MainActivity">
+
+    <!-- GUIDELINES FRAME -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp"
+       android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottom"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--GUIDELINES FORM-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndForm"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopForm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomForm"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- INTERFACE ELEMENTS -->
+
+    <ImageView
+        android:id="@+id/ivLogoBazares"
+        android:src="@drawable/logo_bazares"
+        app:layout_constraintTop_toBottomOf="@+id/glTop"
+        app:layout_constraintStart_toEndOf="@+id/glStart"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        android:layout_marginHorizontal="70dp"
+        android:layout_width="0dp"
+        android:layout_height="110dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdTitlecard"
+        app:layout_constraintTop_toBottomOf="@+id/glTopForm"
+        app:layout_constraintStart_toEndOf="@+id/glStart"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvHeader"
+                android:background="@color/darkpink"
+                android:text="Ingresa tus datos"
+                android:textColor="@color/darkblue"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:paddingVertical="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Ingresa tu nombre"
+        android:background="@color/white"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/cdTitlecard"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp" />
+    <EditText
+        android:id="@+id/etSecondName"
+        android:hint="Ingresa tu apellido"
+        android:background="@color/white"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Ingresa tu email"
+        android:background="@color/white"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/etSecondName"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:text="Indica tu sexo"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        android:textColor="@color/darkblue"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvSex"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbWomen"
+            android:text="Mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rbMen"
+            android:text="Hombre"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/etPass"
+        android:inputType="textPassword"
+        android:hint="Ingresa tu contraseña"
+        android:background="@color/white"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/rgSex"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp" />
+    <EditText
+        android:id="@+id/etPassConfirm"
+        android:inputType="textPassword"
+        android:hint="Confirma tu contraseña"
+        android:background="@color/white"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/etPass"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/tvMessages"
+        android:text="Falta ingresar: "
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btSend"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:text="Registrar"
+        app:layout_constraintBottom_toTopOf="@+id/glBottomForm"
+        app:layout_constraintStart_toEndOf="@+id/glStartForm"
+        app:layout_constraintEnd_toStartOf="@+id/glEndForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

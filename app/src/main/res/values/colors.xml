@@ -3,10 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ocre">#FFc58d1f</color>
-    <color name="darkred">#FFa21b28</color>
     <color name="brown">#FF69412a</color>
     <color name="blue">#FF1198df</color>
     <color name="pink">#DDeea7b6</color>
     <color name="purple">#FF954f7b</color>
-
+    <color name="darkred">#FFa21b28</color>
+    <color name="darkpink">#9C6D8E</color>
+    <color name="darkblue">#142272</color>
 </resources>
