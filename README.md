@@ -1,2 +1,2 @@
 # Rama edgar_dev creada para entega de Homework Módulo 4
-Formulario con validacion y con respuesta en unssegundo activity
+Formulario en ***MainActivity*** con validación y con respuesta en un ***RegistredActivity***
