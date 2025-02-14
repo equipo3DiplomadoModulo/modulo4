@@ -111,8 +111,12 @@ class MainActivity : AppCompatActivity() {
                tvMessages.text = ""
                verificado = true;
            }
-           if(etPassConfirm.getText().toString().isEmpty()){
-               added += ", tu confirmación de contraseña"
+           if(  etPassConfirm.getText().toString().isEmpty() || etPass.getText().toString().isEmpty()
+               || selectedRgGrOption == "" || etEmail.getText().toString().isEmpty()
+                || etSecondName.getText().toString().isEmpty() || etName.getText().toString().isEmpty()
+               ){
+              // if(){ Toast.makeText(this, "VERDADERO PASA", Toast.LENGTH_SHORT).show()} else{}
+               if(  etPassConfirm.getText().toString().isEmpty()){ added += ", tu confirmación de contraseña"}
                verificado = false;
            }else{
                tvMessages.visibility = View.GONE
