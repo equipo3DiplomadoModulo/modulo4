@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".exercise.classroom.luisTapia.ejercicio2.FrameLayoutActivity">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Texto ejemplo dentro de Framelayout"
+    android:background="@android:color/holo_blue_dark"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+
+    />
+
+<TextView
+    android:text="Segundo Texto Ejemplo dentro de Framelayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="60dp"
+    />
+
+<TextView
+    android:text="Tercer texto ejemplo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|top"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar a Ejercicio 2"
+        android:layout_gravity="bottom"
+        android:id="@+id/btnRegresarEjercicio2"
+        />
+
+
+
+
+</FrameLayout>

@@ -1,4 +1,4 @@
-package com.example.androidmodule1.exercise.classroom.luisTapia
+package com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio1
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
 import com.example.androidmodule1.exercise.classroom.EquipoCuatroActivity
+import com.example.androidmodule1.exercise.classroom.luisTapia.MenuLuisActivity
+import com.google.android.material.internal.ManufacturerUtils
 
 class LuisActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +31,9 @@ class LuisActivity : AppCompatActivity() {
 
 
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(R.layout.activity_luis)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -42,7 +45,7 @@ class LuisActivity : AppCompatActivity() {
 
         btnRegresarHome.setOnClickListener {
 
-            val homeIntent = Intent(this, EquipoCuatroActivity::class.java)
+            val homeIntent = Intent(this, MenuLuisActivity::class.java)
 
             register.launch(homeIntent)
 

@@ -1,4 +1,4 @@
-package com.example.androidmodule1.exercise.classroom.luisTapia
+package com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio1
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

@@ -11,7 +11,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
 import com.example.androidmodule1.exercise.classroom.edgarIntent.EdgarActivity
-import com.example.androidmodule1.exercise.classroom.luisTapia.LuisActivity
+import com.example.androidmodule1.exercise.classroom.luisTapia.MenuLuisActivity
+import com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio1.LuisActivity
 
 
 class EquipoCuatroActivity : AppCompatActivity() {
@@ -48,7 +49,7 @@ class EquipoCuatroActivity : AppCompatActivity() {
 
 
         btnOpenLuisViews.setOnClickListener {
-            val luisIntent = Intent(this, LuisActivity::class.java).apply {
+            val luisIntent = Intent(this, MenuLuisActivity::class.java).apply {
 
             }
 

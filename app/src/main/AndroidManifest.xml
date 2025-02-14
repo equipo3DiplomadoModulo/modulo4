@@ -15,6 +15,24 @@
         android:theme="@style/Theme.AndroidModule1"
         tools:targetApi="31">
         <activity
+            android:name=".exercise.classroom.luisTapia.ejercicio2.LuisContraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.ejercicio2.LuisRelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.ejercicio2.LuisLinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.ejercicio2.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.ejercicio2.LuisEjercicio2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.classroom.luisTapia.MenuLuisActivity"
+            android:exported="false" />
+        <activity
             android:name=".exercise.classroom.ejercicio2edgar.recyclerviewelments.ThundercatAdapter"
             android:exported="false" />
         <activity
@@ -48,10 +66,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".exercise.classroom.luisTapia.LuisSecondActivity"
+            android:name=".exercise.classroom.luisTapia.ejercicio1.LuisSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".exercise.classroom.luisTapia.LuisActivity"
+            android:name=".exercise.classroom.luisTapia.ejercicio1.LuisActivity"
             android:exported="false" />
         <activity
             android:name=".exercise.classroom.EquipoCuatroActivity"

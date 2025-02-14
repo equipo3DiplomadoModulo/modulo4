@@ -5,6 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".exercise.classroom.luisTapia.LuisSecondActivity">
+    tools:context=".exercise.classroom.luisTapia.ejercicio1.LuisSecondActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

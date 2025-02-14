@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exercise.classroom.luisTapia.ejercicio2.LuisRelativeLayoutActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce tu usuario"
+        android:gravity="center"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Usuario"
+        android:gravity="center"
+        android:id="@+id/etUser"
+        android:autofillHints="emailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:layout_below="@+id/etUser"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Regresar a Ejercicio 2"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/btnRegresarEjercicio2"
+        />
+
+</RelativeLayout>
