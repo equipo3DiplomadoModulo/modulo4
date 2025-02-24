@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AndroidModule1</string>
     <string name="hola_mundo">Hola Mundo!</string>
+    <string name="nombre_actividad">Nombre actividad</string>
+    <string name="regresar_a_menu_actividad_1">Regresar a menu actividad 1</string>
+    <string name="segundo_activity">Segundo Activity</string>
 </resources>

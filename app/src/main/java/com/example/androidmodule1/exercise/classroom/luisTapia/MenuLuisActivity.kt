@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
+import com.example.androidmodule1.exercise.classroom.Ejercicio2Activity
 import com.example.androidmodule1.exercise.classroom.EquipoCuatroActivity
 import com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio1.LuisActivity
 import com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio2.LuisEjercicio2Activity
@@ -43,7 +44,7 @@ class MenuLuisActivity : AppCompatActivity() {
 
 
         btnMenuPrincipal.setOnClickListener {
-            val menuPrincipalIntent = Intent(this, EquipoCuatroActivity::class.java)
+            val menuPrincipalIntent = Intent(this, Ejercicio2Activity::class.java)
 
             register.launch(menuPrincipalIntent)
         }

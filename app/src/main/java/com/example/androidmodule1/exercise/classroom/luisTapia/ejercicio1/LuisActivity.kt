@@ -1,6 +1,7 @@
 package com.example.androidmodule1.exercise.classroom.luisTapia.ejercicio1
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -20,9 +21,9 @@ class LuisActivity : AppCompatActivity() {
         val register =  registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
             if( result.resultCode == RESULT_OK ){
 
-                val isCorrect = result.data?.getBooleanExtra("EXTRA_IS_CORRECT",  false)
+                val extraRetorno = result.data?.getStringExtra("EXTRA_RETURN_DATA")
 
-                Toast.makeText(this, "IsCorrect: ${isCorrect} ", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "$extraRetorno", Toast.LENGTH_LONG).show()
 
             }else{
                 Toast.makeText(this, "CANCELLED", Toast.LENGTH_LONG).show()
@@ -42,12 +43,36 @@ class LuisActivity : AppCompatActivity() {
 
 
         val btnRegresarHome = findViewById<Button>(R.id.btnRegresarHomeScren)
+        val btnIntentGoogle = findViewById<Button>(R.id.btnIntentUrl)
+
+        val btnSegundaPantalla = findViewById<Button>(R.id.btnOpenLuisSecondScreen)
 
         btnRegresarHome.setOnClickListener {
 
             val homeIntent = Intent(this, MenuLuisActivity::class.java)
 
             register.launch(homeIntent)
+
+        }
+
+
+        btnIntentGoogle.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW , Uri.parse("http://www.google.com"))
+
+            startActivity(Intent.createChooser(urlIntent,"Abrir usando:"))
+        }
+
+
+        btnSegundaPantalla.setOnClickListener {
+
+            val pantallaDosIntent = Intent(this , LuisSecondActivity::class.java ).apply {
+                putExtra("EXTRA_NOMBRE","LUIS TAPIA")
+                putExtra("EXTRA_ACTIVIDAD","PRIMER EJERCICIO"
+                )
+            }
+
+
+            register.launch(pantallaDosIntent)
 
         }
 

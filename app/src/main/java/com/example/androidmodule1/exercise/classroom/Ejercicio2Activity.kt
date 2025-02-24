@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmodule1.R
 import com.example.androidmodule1.exercise.classroom.ejercicio2edgar.EdgarLayoutsActivity
+import com.example.androidmodule1.exercise.classroom.luisTapia.MenuLuisActivity
 
 
 class Ejercicio2Activity : AppCompatActivity() {
@@ -38,7 +39,7 @@ class Ejercicio2Activity : AppCompatActivity() {
 
 
         val btnOpenEdgarViews = findViewById<Button>(R.id.btOpenEdgarLayouts)
-
+        val btnOpenLuisViews = findViewById<Button>(R.id.btOpenLuisLayouts)
 
         btnOpenEdgarViews.setOnClickListener {
             val  secondIntent = Intent(this, EdgarLayoutsActivity::class.java ).apply {
@@ -46,5 +47,12 @@ class Ejercicio2Activity : AppCompatActivity() {
             }
             register.launch(secondIntent)
         }
+
+        btnOpenLuisViews.setOnClickListener {
+            val luisIntent = Intent(this, MenuLuisActivity::class.java)
+
+            register.launch(luisIntent)
+        }
+
     }
 }
